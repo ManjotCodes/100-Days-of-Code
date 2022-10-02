@@ -1,3 +1,5 @@
+//Solution to the hacker rank problem
+
 import java.util.*;
 import java.lang.Math;
 
@@ -20,3 +22,33 @@ class Solution{
         in.close();
     }
 }
+
+//Program to Find Factorial
+
+public class factorial {
+    public static void main(String[] args) {
+        int i,fact=1;  
+        int number=5;  
+        for(i=1;i<=number;i++)
+        {    
+            fact=fact*i;    
+        }    
+        System.out.println("Factorial of "+number+" is: "+fact);    
+    }  
+}  
+
+//Reverse of a number
+
+public class reverse { 
+public static void main(String[] args)   
+{  
+int number = 2345, reverse = 0;  
+while(number != 0)   
+{  
+int remainder = number % 10;  
+reverse = reverse * 10 + remainder;  
+number = number/10;  
+}  
+System.out.println("The reverse is: " + reverse);  
+}  
+}  
