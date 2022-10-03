@@ -35,3 +35,39 @@ public class factorialusingfunctions {
         System.out.println(factorial(7));                              
     }
 }
+
+//Methods in java
+
+import java.util.*;
+public class Sum {
+    public static void main(String[] args) {
+        //int answer = sum2();
+        //System.out.println(answer);
+        int answer= sum3(20,30);
+        System.out.println(answer);
+    }
+    static int sum3(int a, int b){
+        int sum = a+b;
+        return sum;
+    }
+    static int sum2() {
+        Scanner hj = new Scanner(System.in);
+        System.out.println("Enter the first number =");
+        int num1 = hj.nextInt();
+        System.out.println("Enter the second number =");
+        int num2 = hj.nextInt();
+        int sum = num1+num2;
+        return sum;
+    }
+    static void sum() {
+        Scanner hj = new Scanner(System.in);
+        System.out.println("Enter the first number =");
+        int num1 = hj.nextInt();
+        System.out.println("Enter the second number =");
+        int num2 = hj.nextInt();
+        int sum = num1+num2;
+        System.out.println("The sum = "+sum);
+    }
+
+}
+
