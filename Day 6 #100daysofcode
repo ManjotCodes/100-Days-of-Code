@@ -26,28 +26,40 @@ public class typepromotion {
         System.out.println(b-a);
     }
 }
- // Solution to hacker rank question
+ // loops 
  
- import java.util.*;
-import java.lang.Math;
-
-class Solution{
-    public static void main(String []argh){
-        Scanner in = new Scanner(System.in);
-        int t=in.nextInt();
-        for(int i=0;i<t;i++){
-            int a = in.nextInt();
-            int b = in.nextInt();
-            int n = in.nextInt();
-            int result = a + (int) Math.pow(2, 0) * b;
-            System.out.print(result + " ");
-            for(int j=1; j<n; j++){
-                result += (int) Math.pow(2, j) * b;
-                System.out.print(result + " ");
+ public class perfectnolessthan500 {
+    public static void main(String[] args) {
+        int i, j, sum;
+        System.out.println("All Perfect numbers between 1 to 500 :\n");
+        for(i=1; i<=500; i++)
+    {
+        sum = 0;
+        for(j=1; j<i; j++)
+        {
+            if(i % j == 0)
+            {
+                sum += j;
             }
-            System.out.println();
         }
-        in.close();
+        if(sum == i)
+        System.out.println("Perfect Numbers", i);
     }
+    }
+}
+
+// next 
+public class ms {
+    public static void main(String[] args) {
+        int sum = 0;
+		int num = 100;
+		for (int i = 1; i <= num; i++) {
+			if (i %5== 0) {
+				System.out.println(i + " ");
+				sum += i;
+			}
+		}
+		System.out.println("Sum of all these numbers is = " + sum);
+	}
 }
 
