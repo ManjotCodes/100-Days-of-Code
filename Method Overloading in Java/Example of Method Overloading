@@ -1,0 +1,22 @@
+class Demo{
+
+    public void get(String name,  int id)
+   { 
+System.out.println("Company Name :"+ name);
+  System.out.println("Company Id :"+ id); 
+    } 
+
+    public void get(int id, String name)
+   { 
+System.out.println("Company Id :"+ id); 
+  System.out.println("Company Name :"+ name);
+    } 
+} 
+
+class MethodDemo8{ 
+    public static void main (String[] args) { 
+  Demo obj = new Demo();
+  obj.get("Manjot", 1);
+  obj.get("Aman", 2);
+    } 
+}
