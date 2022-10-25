@@ -62,4 +62,3 @@ public class ms {
 		System.out.println("Sum of all these numbers is = " + sum);
 	}
 }
-
