@@ -1,0 +1,35 @@
+public class Student {  
+//instance variables of the class  
+int id,passoutYear;  
+String name,contactNo,collegeName;  
+  
+Student(String contactNo, String collegeName, int passoutYear){  
+this.contactNo = contactNo;  
+this.collegeName = collegeName;  
+this.passoutYear = passoutYear;  
+}  
+  
+Student(int id, String name){  
+this("9999999999", "VIT Bhopal", 2024);  
+this.id = id;  
+this.name = name;  
+}  
+  
+public static void main(String[] args) {  
+//object creation  
+Student s = new Student(22MCA10019, "Manjot");  
+System.out.println("Printing Student Information: \n");  
+System.out.println("Name: "+s.name+"\nId: "+s.id+"\nContact No.: "+s.contactNo+"\nCollege Name: "+s.contactNo+"\nPassing Year: "+s.passoutYear);  
+}  
+}  
+
+
+Output:
+
+Printing Student Information: 
+
+Name: Manjot
+Id: 22MCA10019
+Contact No.: 9999999999
+College Name: VIT Bhopal
+Passing Year: 2024
