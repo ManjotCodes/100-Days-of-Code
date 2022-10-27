@@ -1,0 +1,70 @@
+//Java Program to demonstrate the use of static variable  
+
+class Student{  
+   int rollno;//instance variable  
+   String name;  
+   static String college ="VIT BHOPAL";//static variable  
+   //constructor  
+   Student(int r, String n){  
+   rollno = r;  
+   name = n;  
+   }  
+   //method to display the values  
+   void display (){System.out.println(rollno+" "+name+" "+college);}  
+}  
+//Test class to show the values of objects  
+public class TestStaticVariable1{  
+ public static void main(String args[]){  
+ Student s1 = new Student(19,"Manjot");  
+ Student s2 = new Student(34,"Kushagra");  
+ //we can change the college of all objects by the single line of code  
+ //Student.college="BBDIT";  
+ s1.display();  
+ s2.display();  
+ }  
+}  
+
+
+Output:
+
+19 Manjot VIT BHOPAL
+34 Kushagra VIT BHOPAL
+
+
+//Java Program to demonstrate the use of a static method.  
+
+
+class Student{  
+     int rollno;  
+     String name;  
+     static String college = "ITS";  
+     //static method to change the value of static variable  
+     static void change(){  
+     college = "VIT BHOPAL";  
+     }  
+     //constructor to initialize the variable  
+     Student(int r, String n){  
+     rollno = r;  
+     name = n;  
+     }  
+     //method to display values  
+     void display(){System.out.println(rollno+" "+name+" "+college);}  
+}  
+//Test class to create and display the values of object  
+public class TestStaticMethod{  
+    public static void main(String args[]){  
+    Student.change();//calling change method  
+    //creating objects  
+    Student s1 = new Student(19,"Manjot");  
+    Student s2 = new Student(34,"Kushagra");  
+    Student s3 = new Student(202,"Aman");  
+    //calling display method  
+    s1.display();  
+    s2.display();  
+    s3.display();  
+    }  
+}  
+Test it Now
+Output:19 Manjot VIT BHOPAL
+       34 Kushagra VIT BHOPAL
+       202 Aman VIT BHOPAL
