@@ -1,0 +1,38 @@
+// Java program to illustrate the
+// concept of Multilevel inheritance
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+  
+class one {
+    public void print_geek()
+    {
+        System.out.println("Multi");
+    }
+}
+  
+class two extends one {
+    public void print_for() { System.out.println("Level"); }
+}
+  
+class three extends two {
+    public void print_geek()
+    {
+        System.out.println("Inheritance");
+    }
+}
+  
+// Drived class
+public class Main {
+    public static void main(String[] args)
+    {
+        three g = new three();
+        g.print_Multi();
+        g.print_Level();
+        g.print_Inheritance();
+    }
+}
+Output
+Multi
+Level 
+Inheritance
