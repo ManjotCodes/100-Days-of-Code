@@ -18,3 +18,12 @@ Here, we will have the detailed learning of creating and using user-defined pack
 
 
 3) Java package removes naming collision.
+
+
+## How to access package from another package?
+
+There are three ways to access the package from outside the package.
+
+1. import package.*;
+2. import package.classname;
+3. fully qualified name.
