@@ -1,8 +1,8 @@
-## Output Format
+# Output Format
 
 Print the updated list L as a single line of space-separated integers.
 
-##Sample Input
+## Sample Input
 
 5
 
