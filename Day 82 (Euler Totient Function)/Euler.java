@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Q1 {
+public class Euler {
     static int gcd(int a, int b){
         if (a==0){
             return b;
