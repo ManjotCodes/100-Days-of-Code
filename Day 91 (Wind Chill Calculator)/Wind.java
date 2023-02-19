@@ -1,6 +1,6 @@
 import java.util.*;
 import java.lang.Math;
-public class Day_67_WindChillCalculator {
+public class Day_67_Wind{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter Temperature value-");
