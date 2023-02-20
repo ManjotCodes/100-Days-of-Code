@@ -1,5 +1,5 @@
-<h2>Add Binary from Leetcode</h2>
- <b>Given two binary strings a and b, return their sum as a binary string.
+<h3>Add Binary from Leetcode</h3>
+ <br>Given two binary strings a and b, return their sum as a binary string.
 
  
 Example 1:
