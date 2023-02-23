@@ -5,8 +5,8 @@ public class Bday {
    public static void main(String args[]) {
 
     // declare variables for birthday
-    int birthDate = 23;
-    Month birthMonth = Month.SEPTEMBER;
+    int birthDate = 31;
+    Month birthMonth = Month.AUGUST;
 
     // get current date
     LocalDate currentDate = LocalDate.now();
